@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #eeedeb;
+  --secondary-color: #3c3633;
+  --tertiary-color: #ff66b3;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header * {
+  background-color: var(--secondary-color);
+  padding: 4px 2px;
+}
+.nav-links {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.nav-links:hover,
+.nav-links.active {
+  color: var(--tertiary-color);
+}
