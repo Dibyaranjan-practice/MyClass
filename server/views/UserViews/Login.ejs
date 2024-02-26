@@ -1,6 +1,13 @@
 <%- include("./../SharedLayouts/Header.ejs",{title: "Logincheck",active:"home"})
 %>
-<main>
-  <form method="post" enctype="multipart/form-data" action="/"></form>
+<main class="form-container">
+  <form method="post" enctype="multipart/form-data" action="/" class="login">
+    <label for="username">username</label
+    ><input type="text" name="username" required /><br />
+    <label for="password">password</label
+    ><input type="password" name="password" required /><br />
+    <input type="submit" value="Login" />
+    <a href="/user/signup">SignUp</a>
+  </form>
 </main>
 <%- include("./../SharedLayouts/Footer.ejs") %>

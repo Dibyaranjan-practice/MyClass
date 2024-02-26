@@ -20,3 +20,41 @@ header * {
 .nav-links.active {
   color: var(--tertiary-color);
 }
+
+main {
+  width: 100vw;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form.login,
+form.signup {
+  border: 1px solid pink;
+  padding: 40px;
+  height: fit-content;
+  margin-top: 40px;
+}
+form div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+input {
+  width: 70%;
+  padding: 4px;
+  border-bottom: 3px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}

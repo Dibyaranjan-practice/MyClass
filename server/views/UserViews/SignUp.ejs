@@ -1,0 +1,43 @@
+<%-include("./../SharedLayouts/Header.ejs",{title:
+"Logincheck",active:"home"})%>
+<main class="form-container">
+  <form
+    method="POST"
+    class="signup"
+    enctype="multipart/form-data"
+    action="/user/signup"
+  >
+    <div>
+      <label for="name">name</label
+      ><input type="text" name="name" required /><br />
+    </div>
+    <div>
+      <label for="email">email</label
+      ><input type="email" name="email" required /><br />
+    </div>
+    <div>
+      <label for="phone">phone</label
+      ><input type="text" name="phone" required /><br />
+    </div>
+    <div>
+      <label for="username">username</label>
+      <input type="text" name="username" required /><br />
+    </div>
+    <div>
+      <label for="imageUrl">Profile Image</label>
+      <input type="file" name="imageUrl" accept="images" /><br />
+    </div>
+    <div>
+      <label for="password">password</label>
+      <input type="password" name="password" required /><br />
+    </div>
+    <div>
+      <label for="confirmpassword"> confirm password</label>
+      <input type="password" name="confirmpassword" required /><br />
+    </div>
+    <div><input type="submit" value="SignUp" /></div>
+    <a href="/user/login">Login</a>
+  </form>
+</main>
+
+<%-include("./../SharedLayouts/Footer.ejs")%>
